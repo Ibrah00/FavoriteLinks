@@ -30,8 +30,17 @@ const TableBody = props => {
 }
 
 const Table = (props) => {
-//    const { linkData, removeLink } = props;
-    {/*TODO - return <table> component, TableHeader and TableBody  */}
+    const { linkData, removeLink } = props;
+    {/*TODO - return <table> component, TableHeader and TableBody  */
+        return(
+            
+            <table>
+                <TableHeader> 
+                <TableBody linkData = {props.linkData} removeLink = {props.removeLink}></TableBody>
+                </TableHeader>
+            </table>
+        )
+    }
 
 }
 
